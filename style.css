@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header section */
+
+header {
+  padding: 35px 130px;
+  background-color: white;
+}
+
+.logo {
+  width: 200px;
+  height: 27px;
+}
+
+/* Olive Langer Image */
+
+.heroImg {
+  width: 100vw;
+  height: auto; /* Default height */
+  object-fit: cover;
+  object-position: center; /* Centers image */
+  display: block;
+}
+
+/* Responsivnes for all devices */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+    background-color: white;
+  }
+
+  .logo {
+    width: 180px;
+    height: 24px;
+  }
+
+  .heroImg {
+    height: 65vh; /* Adjusted height for mobile */
+    object-fit: cover;
+    object-position: 45% center;
+  }
+}
+
+/* Tablet (Medium Screens) */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+    background-color: white;
+  }
+  .heroImg {
+    height: 65vh; /* Adjusted height for mobile */
+    object-fit: cover;
+    object-position: 45% center;
+  }
+}
+
+/* Laptop (Large Screens) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* XL Screens (Desktops, Large Monitors) */
+@media (min-width: 1441px) {
+}
