@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+:root {
+  --gray: #7a7a7a;
+}
+
+.section {
+  padding: 100px 100px;
+}
+.lutfana_img {
+  width: 100%;
+}
+.main_content {
+  margin: 31px;
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+.text_detail {
+  width: 50%;
+  padding: 0px 20px;
+}
+.main_heading {
+  font-size: 22px;
+  margin: 15px 0px;
+  font-weight: 500;
+}
+.head_para h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0px 5px 0px;
+}
+.head_para p {
+  font-size: 16px;
+  color: var(--gray);
+}
+.head_para ul {
+  padding-left: 30px;
+}
+.head_para ul li {
+  margin: 8px 0px 20px 0px;
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.images {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  gap: 20px;
+}
+.thumnail {
+  width: 168px;
+  height: 83px;
+}
+.videothumnail_div {
+  position: relative;
+  background-image: url(../images/Screenshot+2021-05-24+at+14.28.58.jpeg);
+  width: 168px;
+  height: 83px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.playbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  background-color: #eff2f3;
+}
+
+/* Responsivnes for all devices */
+
+/* Mobile devices */
+@media (max-width: 568px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .text_detail {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    gap: 10px;
+    justify-items: center;
+  }
+  .main_content {
+    margin: 1px;
+  }
+  .thumnail {
+    max-width: 130px; /* Prevents it from being too large */
+    height: auto;
+  }
+  .videothumnail_div {
+    width: 130px;
+  }
+}
+
+/* Tablet (Medium Screens) */
+@media (max-width: 1024px) {
+  .main_content {
+    margin: 1px;
+  }
+  .thumnail {
+    width: 148px;
+    height: 63px;
+  }
+  .images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+}
