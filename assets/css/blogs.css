@@ -101,6 +101,12 @@ section {
   .right_div {
     width: 100%;
   }
+  .heading {
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 100%;
+  }
   .images_div h3 {
     font-size: 16px;
     font-weight: 400;
@@ -140,6 +146,11 @@ section {
   }
   .left_div,
   .right_div {
+    width: 100%;
+  }
+  .heading {
+    font-size: 22px;
+    font-weight: 400;
     width: 100%;
   }
   .images_div h3 {
@@ -183,6 +194,11 @@ section {
     height: 183px;
   }
   .brand_images {
+    width: 80%;
+  }
+  .heading {
+    font-size: 22px;
+    font-weight: 400;
     width: 80%;
   }
 }
