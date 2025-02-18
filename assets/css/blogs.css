@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+:root {
+  --gray: #7a7a7a;
+}
+
+section {
+  display: flex;
+  padding: 31px 100px;
+  margin: 0px 31px;
+  justify-content: space-between;
+}
+.left_div {
+  width: 50%;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+#about_Tdx {
+  margin-top: 0px;
+}
+.video {
+  margin-top: 20px;
+  width: 389px;
+  height: 233px;
+  aspect-ratio: 16/9;
+}
+.right_div {
+  width: 50%;
+}
+.head_para h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0px 5px 0px;
+}
+.head_para p {
+  font-size: 16px;
+  color: var(--gray);
+}
+.images_div h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0px 5px 0px;
+}
+.images {
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.images img {
+  width: 100%;
+  height: 83px;
+}
+/* Responsivnes for all devices */
+
+/* Mobile devices */
+@media (max-width: 320px) {
+  section {
+    flex-direction: column;
+    padding: 11px 12px !important;
+    margin: 0px 1px;
+  }
+  section {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .left_div,
+  .right_div {
+    width: 100%;
+  }
+  .images_div h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 5px 0px;
+  }
+  .images {
+    margin: 15px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .video {
+    margin-top: 20px;
+    width: 100%;
+    height: 180px;
+  }
+  .images img {
+    width: 100%; /* Make images fill the grid */
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover; /* Prevent distortion */
+  }
+}
+@media (min-width: 321px) and (max-width: 568px) {
+  section {
+    flex-direction: column;
+    padding: 11px 12px !important;
+    margin: 0px 1px;
+  }
+  .left_div,
+  .right_div {
+    width: 100%;
+  }
+  .images_div h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 5px 0px;
+  }
+  .video {
+    margin-top: 20px;
+    width: 100%;
+    height: 180px;
+  }
+  .images {
+    margin: 15px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .images img {
+    width: 100%;
+    height: 83px;
+  }
+}
+
+/* Tablet (Medium Screens) */
+@media (min-width: 568px) and (max-width: 768px) {
+  .images img {
+    width: 100%;
+    height: 73px;
+  }
+  .video {
+    margin-top: 20px;
+    width: 100%;
+    height: 183px;
+  }
+}

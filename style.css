@@ -191,7 +191,7 @@ footer {
 
   .hero_img {
     height: 65vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     object-position: 45% center;
   }
@@ -245,7 +245,7 @@ footer {
   }
   .hero_img {
     height: 65vh; /* Adjusted height for mobile */
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     object-position: 45% center;
   }
