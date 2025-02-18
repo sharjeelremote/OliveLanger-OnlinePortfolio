@@ -10,9 +10,13 @@
 
 section {
   display: flex;
-  padding: 31px 100px;
+  /* padding: 31px 100px 100px 100px; */
   margin: 0px 31px;
   justify-content: space-between;
+  gap: 20px;
+}
+.section {
+  padding-bottom: 100px;
 }
 .left_div {
   width: 50%;
@@ -21,6 +25,7 @@ section {
   font-size: 24px;
   font-weight: 400;
   padding-right: 20px;
+  width: 80%;
 }
 #about_Tdx {
   margin-top: 0px;
@@ -58,14 +63,35 @@ section {
   width: 100%;
   height: 83px;
 }
+
+.brand_images {
+  padding: 20px 0px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#brand_images_3_grid {
+  padding: 20px 0px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.brand_images img {
+  width: 100%;
+  height: auto;
+}
 /* Responsivnes for all devices */
 
 /* Mobile devices */
 @media (max-width: 320px) {
   section {
     flex-direction: column;
-    padding: 11px 12px !important;
     margin: 0px 1px;
+  }
+  .section {
+    padding: 31px 12px 50px 12px !important;
   }
   section {
     padding: 10px;
@@ -96,12 +122,21 @@ section {
     height: auto; /* Keep aspect ratio */
     object-fit: cover; /* Prevent distortion */
   }
+  .brand_images {
+    width: 100%;
+  }
+  #brand_images_3_grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 321px) and (max-width: 568px) {
   section {
     flex-direction: column;
-    padding: 11px 12px !important;
     margin: 0px 1px;
+  }
+  .section {
+    padding: 31px 12px 50px 12px !important;
   }
   .left_div,
   .right_div {
@@ -127,6 +162,13 @@ section {
     width: 100%;
     height: 83px;
   }
+  .brand_images {
+    width: 100%;
+  }
+  #brand_images_3_grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Tablet (Medium Screens) */
@@ -139,5 +181,8 @@ section {
     margin-top: 20px;
     width: 100%;
     height: 183px;
+  }
+  .brand_images {
+    width: 80%;
   }
 }
