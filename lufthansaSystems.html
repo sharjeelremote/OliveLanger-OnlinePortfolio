@@ -30,6 +30,12 @@
         </a>
       </div>
     </header>
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
+      <button id="prev-btn" class="nav-btn prev-btn"><</button>
+      <button id="next-btn" class="nav-btn next-btn">></button>
+    </div>
     <section class="main_content">
       <img
         src="assets/images/lufthanasystems.png"
@@ -38,6 +44,11 @@
       />
       <div class="content">
         <div class="text_detail">
+          <div class="navigator">
+            <a href="javascript:history.back()"> ←</a>
+            <a href="/">⌂</a>
+            <a href="javascript:history.forward()">→</a>
+          </div>
           <h2 class="main_heading">
             LUFTHANSA SYSTEMS // UI/UX DESIGN AND DESIGN SYSTEM
           </h2>
@@ -114,7 +125,7 @@
           </div>
         </div>
         <div class="images_div">
-          <div class="images">
+          <div class="images brand_images">
             <img
               src="./assets/images/LSY+Logo.png"
               alt="lufthansa"
@@ -187,5 +198,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

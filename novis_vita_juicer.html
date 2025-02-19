@@ -30,14 +30,26 @@
         </a>
       </div>
     </header>
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
+      <button id="prev-btn" class="nav-btn prev-btn"><</button>
+      <button id="next-btn" class="nav-btn next-btn">></button>
+    </div>
     <section class="main_content">
       <img
         src="assets/images/Novis-Collage.png"
         alt="compnay img"
         class="compnay_img"
       />
+
       <div class="content">
         <div class="text_detail">
+          <div class="navigator">
+            <a href="javascript:history.back()"> ←</a>
+            <a href="/">⌂</a>
+            <a href="javascript:history.forward()">→</a>
+          </div>
           <h2 class="main_heading">NOVIS VITA JUICER // BRAND DESIGN</h2>
           <div class="head_para">
             <h3>About</h3>
@@ -76,7 +88,7 @@
           </div>
         </div>
         <div class="images_div">
-          <div class="images">
+          <div class="images brand_images">
             <img src="./assets/images/vj1.jpg" alt="vj1" class="thumnail" />
             <img src="./assets/images/vj2.jpg" alt="vj2" class="thumnail" />
             <img src="./assets/images/vj3.jpg" alt="vj3" class="thumnail" />
@@ -105,5 +117,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

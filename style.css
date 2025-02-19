@@ -20,7 +20,22 @@ header {
   width: 200px;
   height: 27px;
 }
-
+.navigator {
+  display: flex;
+  gap: 10px;
+}
+.navigator a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+.navigator a:hover {
+  color: red !important;
+}
+.navigator a:visited {
+  color: black;
+}
 /* Olive Langer Image */
 
 .hero_img {
@@ -134,6 +149,8 @@ section {
   cursor: pointer;
   color: black;
   text-decoration: none;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
 }
 .blog_post_text a {
   text-decoration: none;
@@ -175,10 +192,107 @@ footer {
 .footer_icons img:hover {
   filter: invert(0);
 }
+
+/* Lightbox Styling */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.788);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.video-thumbnail {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.lightbox-iframe {
+  width: 80vw;
+  height: 60vh;
+  border: none;
+}
+
+/* Lightbox Image */
+.lightbox-img {
+  width: 80vw;
+  height: 70vh;
+  border-radius: 2px;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 10px 15px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.prev-btn {
+  left: 20px;
+}
+.next-btn {
+  right: 20px;
+}
+
+/* Button Hover Effect */
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.075);
+}
+
 /* Responsivnes for all devices */
 
 /* Mobile devices */
 @media (max-width: 600px) {
+  .lightbox-img {
+    width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+  }
+  .nav-btn {
+    padding: 10px 15px;
+  }
+  .prev-btn {
+    left: 1px;
+  }
+  .next-btn {
+    right: 1px;
+  }
   header {
     padding: 15px 20px;
     background-color: white;
@@ -219,8 +333,10 @@ footer {
   }
   .section_detail_title_para h3 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     padding: 10px 0px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
   }
   .section_detail_title_para p {
     font-size: 15px;

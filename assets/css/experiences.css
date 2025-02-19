@@ -28,8 +28,10 @@
 }
 .main_heading {
   font-size: 22px;
-  margin: 15px 0px;
-  font-weight: 500;
+  margin-bottom: 15px;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  line-height: 1.5em;
 }
 .head_para h3 {
   font-size: 18px;
@@ -67,6 +69,7 @@
 .thumnail {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .videos {
   display: grid;

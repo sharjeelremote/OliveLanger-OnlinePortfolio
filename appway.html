@@ -30,6 +30,12 @@
         </a>
       </div>
     </header>
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
+      <button id="prev-btn" class="nav-btn prev-btn"><</button>
+      <button id="next-btn" class="nav-btn next-btn">></button>
+    </div>
     <section class="main_content">
       <img
         src="assets/images/Appway-Collage-3.png"
@@ -38,6 +44,11 @@
       />
       <div class="content">
         <div class="text_detail">
+          <div class="navigator">
+            <a href="javascript:history.back()"> ←</a>
+            <a href="/">⌂</a>
+            <a href="javascript:history.forward()">→</a>
+          </div>
           <h2 class="main_heading">Appway // Global Communication design</h2>
           <div class="head_para">
             <h3>About Appway</h3>
@@ -85,7 +96,7 @@
           </div>
         </div>
         <div class="images_div">
-          <div class="images" id="col_images_div">
+          <div class="images brand_images" id="col_images_div">
             <img
               src="./assets/images/Appway1.png"
               alt="Appway1"
@@ -212,5 +223,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
