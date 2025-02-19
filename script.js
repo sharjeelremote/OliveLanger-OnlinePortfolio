@@ -1,4 +1,4 @@
-document.getElementById("header").innerHTML =
-  '<object type="text/html" data="components/header.html"></object>';
-document.getElementById("footer").innerHTML =
-  '<object type="text/html" data="components/footer.html"></object>';
+function redirectToGmail() {
+  window.location.href =
+    "https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com";
+}
