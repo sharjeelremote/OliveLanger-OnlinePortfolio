@@ -1,8 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", serif;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  font-weight: 400;
   font-style: normal;
+  line-height: 1.4em;
+  letter-spacing: 0.035em;
 }
 
 :root {
@@ -11,8 +15,11 @@
 
 /* Header section */
 
-header {
-  padding: 35px 130px;
+header div {
+  max-width: 1200px;
+  padding: 35px 98px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
 }
 
@@ -39,15 +46,19 @@ header {
 /* Olive Langer Image */
 
 .hero_img {
-  width: 98.7vw;
-  height: auto; /* Default height */
+  width: 100%;
+  height: 365px;
   object-fit: cover;
-  object-position: center; /* Centers image */
+  object-position: center;
   display: block;
 }
-
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 section {
-  padding: 31px 131px;
+  padding: 66px 100px 0px 100px;
 }
 
 /* Portfolio div */
@@ -59,6 +70,7 @@ section {
 }
 .section_heading {
   letter-spacing: 0.16em;
+  line-height: 1.3em;
   font-weight: 400;
   font-size: 28px;
 }
@@ -97,10 +109,10 @@ section {
   filter: invert(1);
 }
 .work_sample_heading {
-  padding: 20px 0px;
+  padding-bottom: 66px;
 }
-.lutfana_img img {
-  width: 100%;
+.work_sample_img img {
+  max-width: 872px;
 }
 .section_detail {
   display: flex;
@@ -108,23 +120,23 @@ section {
   justify-content: center;
 }
 .section_detail_title_para {
-  width: 55%;
+  max-width: 426px;
 }
 .section_detail_title_para a {
   text-decoration: none;
 }
-.section_detail_title_para h3 {
+.section_detail_title_para h2 {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 0px;
   color: black;
 }
-.section_detail_title_para h3:hover {
+.section_detail_title_para h2:hover {
   color: red;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
 }
-.section_detail_title_para h3:visited {
+.section_detail_title_para h2:visited {
   color: black;
 }
 .section_detail_title_para p {
@@ -135,14 +147,15 @@ section {
 .blogs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 28px;
-  padding: 20px;
+  gap: 30px;
 }
+
 .blog_post img {
   width: 100%;
-  height: 146px;
+  height: 147px;
 }
-.blog_post_text h3 {
+
+.blog_post_text h2 {
   font-size: 18px;
   font-weight: 500;
   padding: 5px 0px;
@@ -155,22 +168,25 @@ section {
 .blog_post_text a {
   text-decoration: none;
 }
-.blog_post_text h3:hover {
+.blog_post_text h2:hover {
   color: red;
   transition: color 0.3s ease-in-out;
 }
-.blog_post_text h3:visited {
+.blog_post_text h2:visited {
   color: black;
 }
 .blog_post_text p {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--gray);
   padding: 5px 0px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
 }
 
 footer {
   background-color: #101014;
   padding: 20px 0px 100px 120px;
+  margin-top: 66px;
 }
 .footer_icons {
   border: 2px solid #1a1f2d;
@@ -278,7 +294,10 @@ footer {
 /* Responsivnes for all devices */
 
 /* Mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 568px) {
+  .work_sample_img img {
+    width: 100%;
+  }
   .lightbox-img {
     width: 80vw;
     height: 40vh;
@@ -293,22 +312,29 @@ footer {
   .next-btn {
     right: 1px;
   }
-  header {
-    padding: 15px 20px;
+  header div {
+    max-width: 1200px;
+    padding: 14px 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
   }
-
+  .logo {
+    width: 180px;
+    height: 25px;
+  }
+  .hero_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 45% center;
+    display: block;
+  }
   .logo {
     width: 180px;
     height: 24px;
   }
 
-  .hero_img {
-    height: 65vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: 45% center;
-  }
   section {
     padding: 31px 20px;
   }
@@ -321,18 +347,20 @@ footer {
   }
   .section_heading {
     letter-spacing: 0.16em;
-    font-weight: 300;
-    font-size: 26px;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 0px 0px;
   }
   .portfolio_para_div {
     width: 100%;
     padding: 10px 0px;
   }
-  .section_detail_title_para {
-    width: 100%;
+  .icons_div {
+    padding: 17px 0px;
   }
-  .section_detail_title_para h3 {
-    font-size: 16px;
+  .section_detail_title_para h2 {
+    font-size: 18px;
     font-weight: 400;
     padding: 10px 0px;
     letter-spacing: 0.03em;
@@ -341,6 +369,10 @@ footer {
   .section_detail_title_para p {
     font-size: 15px;
     color: var(--gray);
+  }
+  .blog_post img {
+    width: 100%;
+    height: 182px;
   }
   .blogs {
     grid-template-columns: 1fr;
@@ -354,11 +386,19 @@ footer {
 }
 
 /* Tablet (Medium Screens) */
-@media (max-width: 1024px) {
-  header {
-    padding: 15px 20px;
+@media (min-width: 568px) and (max-width: 768px) {
+  header div {
+    max-width: 1200px;
+    padding: 14px 32px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
   }
+  .logo {
+    width: 180px;
+    height: 25px;
+  }
+
   .hero_img {
     height: 65vh; /* Adjusted height for mobile */
     width: 100%;
@@ -366,37 +406,37 @@ footer {
     object-position: 45% center;
   }
   section {
-    padding: 31px 20px;
+    padding: 35px 36px;
+  }
+  .work_sample_img img {
+    width: 100%;
+  }
+  .blogs {
+    padding: 0px;
+  }
+  .blog_post img {
+    width: 100%;
+    height: 99px;
   }
 }
 
-/* Laptop (Large Screens) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  section {
-    padding: 31px 100px;
+@media (max-width: 769px) and (max-width: 1024px) {
+  header div {
+    max-width: 1200px;
+    padding: 14px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
   }
-}
+  .logo {
+    width: 180px;
+    height: 25px;
+  }
 
-/* XL Screens (Desktops, Large Monitors) */
-@media (min-width: 1441px) {
-  section {
-    padding: 31px 250px;
+  .work_sample_img img {
+    width: 100%;
   }
-  .section_heading {
-    letter-spacing: 5px;
-    font-weight: 300;
-    font-size: 36px;
-  }
-  .portfolio_para_div p {
-    padding: 10px 0px;
-    font-size: 22px;
-  }
-  .section_detail_title_para h3 {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 0px;
-  }
-  .section_detail_title_para p {
-    font-size: 20px;
+  .blogs {
+    padding: 0px;
   }
 }

@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
 }
 :root {
@@ -33,7 +33,7 @@
   letter-spacing: 0.13em;
   line-height: 1.5em;
 }
-.head_para h3 {
+.head_para h2 {
   font-size: 18px;
   font-weight: 400;
   margin: 20px 0px 5px 0px;

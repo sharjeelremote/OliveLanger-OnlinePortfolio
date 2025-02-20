@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
 }
 :root {
@@ -42,7 +42,7 @@ section {
 .right_div {
   width: 50%;
 }
-.head_para h3 {
+.head_para h2 {
   font-size: 18px;
   font-weight: 400;
   margin: 20px 0px 5px 0px;
@@ -51,7 +51,7 @@ section {
   font-size: 16px;
   color: var(--gray);
 }
-.images_div h3 {
+.images_div h2 {
   font-size: 18px;
   font-weight: 400;
   margin: 20px 0px 5px 0px;
@@ -85,7 +85,6 @@ section {
   width: 100%;
   height: auto;
   cursor: pointer;
- 
 }
 /* Responsivnes for all devices */
 
@@ -111,7 +110,7 @@ section {
     font-weight: 400;
     width: 100%;
   }
-  .images_div h3 {
+  .images_div h2 {
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0px 5px 0px;
@@ -157,7 +156,7 @@ section {
     font-weight: 400;
     width: 100%;
   }
-  .images_div h3 {
+  .images_div h2 {
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0px 5px 0px;
