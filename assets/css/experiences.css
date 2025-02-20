@@ -7,40 +7,47 @@
 :root {
   --gray: #7a7a7a;
 }
-
-.section {
-  padding: 100px 100px;
+.compnay_img_div {
+  display: flex;
+  justify-content: center;
 }
 .compnay_img {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 872px;
+  margin-bottom: 66px;
 }
 .main_content {
-  margin: 0px 31px 31px 31px;
+  padding: 78px 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
 }
 .content {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 .text_detail {
-  width: 50%;
-  padding: 0px 20px;
+  width: 430px !important;
 }
 .main_heading {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 15px;
   font-weight: 400;
-  letter-spacing: 0.13em;
-  line-height: 1.5em;
+  letter-spacing: 0.16em;
+  line-height: 1.25em;
 }
 .head_para h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 20px 0px 5px 0px;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
 }
 .head_para p {
   font-size: 16px;
   color: var(--gray);
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.035em;
 }
 .head_para ul {
   padding-left: 30px;
@@ -51,25 +58,25 @@
   font-size: 16px;
 }
 .images_div {
-  width: 50%;
+  width: 517px;
 }
 .images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px;
-  gap: 10px;
+  gap: 18px;
 }
 #col_images_div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 10px;
-  gap: 10px;
+  gap: 18px;
 }
 
 .thumnail {
   width: 100%;
   height: auto;
   cursor: pointer;
+  object-position: center;
 }
 .videos {
   display: grid;
@@ -164,4 +171,10 @@
   .videos {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.spacer {
+  width: 52px;
+  height: 41px;
+  padding: 17px;
 }
