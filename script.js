@@ -1,3 +1,5 @@
+// images lightBox
+
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".brand_images  img"); // Select images on this page only
   const impresionImages = document.querySelectorAll(".images  img"); // Select images on this page only
@@ -71,6 +73,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// video lightBox
+document.addEventListener("DOMContentLoaded", function () {
+  const video_lightbox = document.getElementById("video_lightbox");
+  const videothumnail_div = document.getElementById("videothumnail_div");
+  const closeBtn = document.getElementById("close-btn");
+
+  videothumnail_div.addEventListener("click", function () {
+    video_lightbox.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    video_lightbox.style.display = "none";
+    console.log("hello");
+  });
+});
+
+// video thumbnails
+
+function loadVideo(video_container) {
+  const imgElement = video_container.querySelector("img");
+  const videoUrl = imgElement.alt;
+
+  video_container.innerHTML = `
+     <iframe
+          src=${videoUrl}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="video">
+    </iframe>`;
+}
+
 // Url Navigation Buttons logic
 
 let urls = [
@@ -103,5 +139,8 @@ function navigateNext() {
     urlIndex++;
     localStorage.setItem("urlIndex", urlIndex);
     window.location.href = urls[urlIndex];
+  }
+  if ((urlIndex = 0)) {
+    localStorage.setItem("urlIndex", 0);
   }
 }

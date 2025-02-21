@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tedxzurich 2016</title>
-    <link rel="stylesheet" href="/assets/css/blogs.css" />
+    <link rel="stylesheet" href="/assets/css/experiences.css" />
     <link
       rel="shortcut icon"
       href="assets/images/favicon.png"
@@ -31,10 +31,10 @@
       </div>
     </header>
     <div id="lightbox" class="lightbox">
-      <span class="close-btn">&times;</span>
+      <span class="close-btn">✖</span>
       <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
-      <button id="prev-btn" class="nav-btn prev-btn"><</button>
-      <button id="next-btn" class="nav-btn next-btn">></button>
+      <button id="prev-btn" class="nav-btn prev-btn">◀</button>
+      <button id="next-btn" class="nav-btn next-btn">▶</button>
     </div>
     <main class="section">
       <div class="left_div">
@@ -44,24 +44,32 @@
           <a onclick="navigateNext()">→</a>
         </div>
         <h2 class="heading">TEDXZURICH 2016 - PEOPLE FIRST // ART DIRECTION</h2>
-        <iframe
-          src="https://www.youtube.com/embed/x4whvDzzJBg?si=rpUE_KvQUdwiMtkg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          class="video"
-        ></iframe>
-        <iframe
-          src="https://www.youtube.com/embed/dUW4TUy1P-o?si=H5LueEfyko2hl3AS"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          class="video"
-        ></iframe>
+        <div
+          class="video-container"
+          id="video-container"
+          onclick="loadVideo(this)"
+        >
+          <img
+            src="assets/images/tedx_2016_thumbnail.jpg"
+            alt="https://www.youtube.com/embed/x4whvDzzJBg?si=Yq-bL4XjRI7qMpWT"
+            class="video"
+            id="video_thumbnail"
+          />
+          <div class="play-button">▶</div>
+        </div>
+        <div
+          class="video-container"
+          id="video-container"
+          onclick="loadVideo(this)"
+        >
+          <img
+            src="assets/images/tedx_2016_impression_thumbnail.jpg"
+            alt="https://www.youtube.com/embed/dUW4TUy1P-o?si=TmwXgd2qc3FsagQG"
+            class="video"
+            id="video_thumbnail"
+          />
+          <div class="play-button">▶</div>
+        </div>
       </div>
       <div class="spacer"></div>
       <div class="right_div">
@@ -118,16 +126,16 @@
     </main>
     <footer>
       <div class="icons_div">
-        <a href="mailto:design@oliver-langner.com" class="footer_icons">
-          <img src="assets/images/mail.svg" alt="Email" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/oliver-langner"
-          target="_blank"
-          class="footer_icons"
-        >
-          <img src="assets/images/linkedin.svg" alt="Linkdin" />
-        </a>
+        <div class="footer_icons">
+          <a href="mailto:design@oliver-langner.com" target="_blank">
+            <img src="assets/images/mail.svg" alt="Email" />
+          </a>
+        </div>
+        <div class="footer_icons">
+          <a href="https://www.linkedin.com/in/oliver-langner" target="_blank">
+            <img src="assets/images/linkedin.svg" alt="Linkdin" />
+          </a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>

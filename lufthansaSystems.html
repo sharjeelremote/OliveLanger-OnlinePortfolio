@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lufthansa Systems</title>
-    <link rel="stylesheet" href="/assets/css/experiences.css" />
+    <link rel="stylesheet" href="/assets/css/heroExperiences.css" />
     <link
       rel="shortcut icon"
       href="assets/images/favicon.png"
@@ -31,10 +31,10 @@
       </div>
     </header>
     <div id="lightbox" class="lightbox">
-      <span class="close-btn">&times;</span>
+      <span class="close-btn">✖</span>
       <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
-      <button id="prev-btn" class="nav-btn prev-btn"><</button>
-      <button id="next-btn" class="nav-btn next-btn">></button>
+      <button id="prev-btn" class="nav-btn prev-btn">◀</button>
+      <button id="next-btn" class="nav-btn next-btn">▶</button>
     </div>
     <section class="main_content">
       <div class="compnay_img_div">
@@ -173,7 +173,7 @@
             />
           </div>
           <div class="videos">
-            <div class="videothumnail_div">
+            <div class="videothumnail_div" id="videothumnail_div">
               <img
                 src="./assets/images/Screenshot+2021-05-24+at+14.28.58.jpeg"
                 alt="video"
@@ -189,18 +189,33 @@
         </div>
       </div>
     </section>
+    <div id="video_lightbox" class="video_lightbox">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-W2BCp3ObB0?si=hO7nfDefq4ypmjYS"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="lightbox_video"
+      ></iframe>
+    </div>
+
     <footer>
       <div class="icons_div">
-        <a href="mailto:design@oliver-langner.com" class="footer_icons">
-          <img src="assets/images/mail.svg" alt="Email" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/oliver-langner"
-          target="_blank"
-          class="footer_icons"
-        >
-          <img src="assets/images/linkedin.svg" alt="Linkdin" />
-        </a>
+        <div class="footer_icons">
+          <a href="mailto:design@oliver-langner.com" target="_blank">
+            <img src="assets/images/mail.svg" alt="Email" />
+          </a>
+        </div>
+        <div class="footer_icons">
+          <a href="https://www.linkedin.com/in/oliver-langner" target="_blank">
+            <img src="assets/images/linkedin.svg" alt="Linkdin" />
+          </a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
