@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Montserrat", serif;
   font-style: normal;
+  box-sizing: border-box;
 }
 :root {
   --gray: #7a7a7a;

@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Montserrat", serif;
   font-style: normal;
+  box-sizing: border-box;
 }
 :root {
   --gray: #7a7a7a;
@@ -191,10 +192,6 @@
 }
 
 @media (max-width: 769px) and (max-width: 1024px) {
-  .main_content {
-    margin: 1px;
-  }
-
   .videos {
     grid-template-columns: repeat(2, 1fr);
   }
