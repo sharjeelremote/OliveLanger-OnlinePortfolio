@@ -36,6 +36,7 @@ header div {
   text-decoration: none;
   font-weight: bolder;
   color: black;
+  cursor: pointer;
 }
 .navigator a:hover {
   color: red !important;
@@ -189,7 +190,7 @@ section {
 
 footer {
   background-color: #101014;
-  padding: 20px 0px 100px 120px;
+  padding: 20px 0px 140px 120px;
   margin-top: 66px;
 }
 .footer_icons {

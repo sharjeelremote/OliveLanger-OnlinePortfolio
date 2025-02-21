@@ -30,13 +30,18 @@
         </a>
       </div>
     </header>
-
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
+      <button id="prev-btn" class="nav-btn prev-btn"><</button>
+      <button id="next-btn" class="nav-btn next-btn">></button>
+    </div>
     <main class="section">
       <div class="left_div">
         <div class="navigator">
-          <a href="javascript:history.back()"> ←</a>
+          <a onclick="navigatBack()">←</a>
           <a href="/">⌂</a>
-          <a href="javascript:history.forward()">→</a>
+          <a onclick="navigateNext()">→</a>
         </div>
         <h1 class="heading">
           TEDxZurich 2015 - Re-Imagining Everything // ART DIRECTION
@@ -130,5 +135,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

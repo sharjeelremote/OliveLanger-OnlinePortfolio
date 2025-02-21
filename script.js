@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".brand_images img"); // Select images on this page only
+  const images = document.querySelectorAll(".brand_images  img"); // Select images on this page only
+  const impresionImages = document.querySelectorAll(".images  img"); // Select images on this page only
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const closeBtn = document.querySelector(".close-btn");
@@ -10,13 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
   let imgList = []; // Store only this page's images
 
   // Collect image sources from the current page
-  images.forEach((img, index) => {
-    imgList.push(img.src);
-    img.addEventListener("click", function () {
-      currentIndex = index;
-      showLightbox(imgList[currentIndex]);
+  if (images.length > 0) {
+    images.forEach((img, index) => {
+      imgList.push(img.src);
+      img.addEventListener("click", function () {
+        currentIndex = index;
+        showLightbox(imgList[currentIndex]);
+      });
     });
-  });
+  } else {
+    impresionImages.forEach((img, index) => {
+      imgList.push(img.src);
+      img.addEventListener("click", function () {
+        currentIndex = index;
+        showLightbox(imgList[currentIndex]);
+      });
+    });
+  }
 
   // Show Lightbox with Selected Image
   function showLightbox(imageSrc) {
@@ -59,3 +70,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Url Navigation Buttons logic
+
+let urls = [
+  "/lufthansaSystems.html",
+  "/tedxzurich2015.html",
+  "/tedxzurich2016.html",
+  "/tedxzurich2017.html",
+  "/leonteq.html",
+  "/persnal_shop.html",
+  "/migrol.html",
+  "/novis_vita_juicer.html",
+  "/bank_of_cyprus_guidlines.html",
+  "/bank_of_cyprus_editorial.html",
+  "/360_strategy.html",
+];
+
+let urlIndex = parseInt(localStorage.getItem("urlIndex")) || 0;
+
+function navigatBack() {
+  if (urlIndex > 0) {
+    urlIndex--;
+    localStorage.setItem("urlIndex", urlIndex);
+    window.location.href = urls[urlIndex];
+  }
+}
+
+function navigateNext() {
+  if (urlIndex < urls.length - 1) {
+    urlIndex++;
+    localStorage.setItem("urlIndex", urlIndex);
+    window.location.href = urls[urlIndex];
+  }
+}

@@ -30,12 +30,18 @@
         </a>
       </div>
     </header>
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded Image" />
+      <button id="prev-btn" class="nav-btn prev-btn"><</button>
+      <button id="next-btn" class="nav-btn next-btn">></button>
+    </div>
     <main class="section">
       <div class="left_div">
         <div class="navigator">
-          <a href="javascript:history.back()"> ←</a>
+          <a onclick="navigatBack()">←</a>
           <a href="/">⌂</a>
-          <a href="javascript:history.forward()">→</a>
+          <a onclick="navigateNext()">→</a>
         </div>
         <h2 class="heading">TEDXZURICH 2016 - PEOPLE FIRST // ART DIRECTION</h2>
         <iframe
@@ -98,7 +104,7 @@
           <h2>Impressions</h2>
           <div class="images">
             <img src="assets/images/tedx_2016_1.jpg" alt="tedx2016" />
-            <img src="assets/images/tedx_2016_1.jpg" alt="tedx_2016_2" />
+            <img src="assets/images/tedx_2016_2.jpg" alt="tedx_2016_2" />
             <img src="assets/images/tedx_2016_5.jpg" alt="tedx_2016_3" />
             <img src="assets/images/tedx_2016_3.jpg" alt="tedx_2016_4" />
             <img src="assets/images/tedx_2016_4.jpg" alt="tedx_2016_5" />
@@ -124,5 +130,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
