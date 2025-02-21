@@ -78,6 +78,7 @@ let urls = [
   "/tedxzurich2015.html",
   "/tedxzurich2016.html",
   "/tedxzurich2017.html",
+  "/appway.html",
   "/leonteq.html",
   "/persnal_shop.html",
   "/migrol.html",
