@@ -108,6 +108,10 @@ section {
 .icons img:hover {
   filter: invert(1);
 }
+.work_sample_img_div {
+  display: flex;
+  justify-content: center;
+}
 .work_sample_heading {
   padding-bottom: 66px;
 }
@@ -294,7 +298,7 @@ footer {
 /* Responsivnes for all devices */
 
 /* Mobile devices */
-@media (max-width: 568px) {
+@media (max-width: 640px) {
   .work_sample_img img {
     width: 100%;
   }
@@ -386,7 +390,7 @@ footer {
 }
 
 /* Tablet (Medium Screens) */
-@media (min-width: 568px) and (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 768px) {
   header div {
     max-width: 1200px;
     padding: 14px 32px;
