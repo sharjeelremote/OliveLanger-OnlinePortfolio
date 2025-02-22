@@ -130,6 +130,7 @@ section {
 }
 .work_sample_img img {
   max-width: 872px;
+  height: 100%;
 }
 .section_detail {
   display: flex;
@@ -169,7 +170,7 @@ section {
 
 .blog_post img {
   width: 100%;
-  height: 147px;
+  height: auto;
 }
 
 .blog_post_text h2 {
@@ -315,6 +316,7 @@ footer {
 @media (max-width: 640px) {
   .work_sample_img img {
     width: 100%;
+    height: 100%;
   }
   .lightbox-img {
     width: 80vw;
@@ -398,7 +400,7 @@ footer {
   }
   .blog_post img {
     width: 100%;
-    height: 182px;
+    height: auto;
   }
   .experiences {
     grid-template-columns: 1fr;
@@ -441,13 +443,14 @@ footer {
   }
   .work_sample_img img {
     width: 100%;
+    height: 100%;
   }
   .experiences {
     padding: 0px;
   }
   .blog_post img {
     width: 100%;
-    height: 99px;
+    height: auto;
   }
 }
 
@@ -466,6 +469,7 @@ footer {
 
   .work_sample_img img {
     width: 100%;
+    height: 100%;
   }
   .experiences {
     padding: 0px;
