@@ -76,17 +76,21 @@ document.addEventListener("DOMContentLoaded", function () {
 // video lightBox
 document.addEventListener("DOMContentLoaded", function () {
   const video_lightbox = document.getElementById("video_lightbox");
-  const videothumnail_div = document.getElementById("videothumnail_div");
+  const videothumnail_div = document.querySelectorAll(".videothumnail_div");
   const closeBtn = document.getElementById("close-btn");
-
-  videothumnail_div.addEventListener("click", function () {
-    video_lightbox.style.display = "flex";
-    console.log("click");
+  const iframe = document.querySelector(".lightbox_video");
+  videothumnail_div.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", function () {
+      video_lightbox.style.display = "flex";
+      console.log("click");
+    });
   });
-
-  closeBtn.addEventListener("click", function () {
-    video_lightbox.style.display = "none";
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function () {
+      video_lightbox.style.display = "none";
+      iframe.src = iframe.src;
+    });
+  }
 });
 
 // video thumbnails
@@ -124,23 +128,25 @@ let urls = [
   "/360_strategy.html",
 ];
 
-let urlIndex = parseInt(localStorage.getItem("urlIndex")) || 0;
-
+let urlIndex = urls.findIndex((url) => url === window.location.pathname);
 function navigatBack() {
-  if (urlIndex > 0) {
+  if (urlIndex === 0) {
+    urlIndex = urlIndex + 11;
+    window.location.href = urls[urlIndex];
+  } else if (urlIndex === 1) {
+    window.location.href = urls[11];
+  } else {
     urlIndex--;
-    localStorage.setItem("urlIndex", urlIndex);
     window.location.href = urls[urlIndex];
   }
 }
 
 function navigateNext() {
-  if (urlIndex < urls.length - 1) {
+  if (urlIndex === 11) {
+    window.location.href = urls[1];
+  } else {
+    urlIndex = urls.findIndex((url) => url === window.location.pathname);
     urlIndex++;
-    localStorage.setItem("urlIndex", urlIndex);
     window.location.href = urls[urlIndex];
-  }
-  if ((urlIndex = 0)) {
-    localStorage.setItem("urlIndex", 0);
   }
 }

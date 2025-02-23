@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
+  min-height: 70vh;
   padding: 78px 100px;
   margin-left: auto;
   margin-right: auto;
@@ -30,19 +31,19 @@
   font-weight: 400;
   letter-spacing: 0.16em;
   line-height: 1.25em;
+  text-transform: uppercase;
 }
 #about_Tdx {
   margin-top: 0px;
 }
 .video {
   margin-top: 20px;
-  width: 389px;
-  height: 233px;
+  width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
 }
 .video-container {
   position: relative;
-
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -51,14 +52,12 @@
 .play-button {
   position: absolute;
   color: white;
-  font-size: 50px;
-  padding: 10px 20px;
-  border-radius: 50%;
+  font-size: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.3s ease;
-  text-shadow: 2px 2px 12px #7a7a7a;
+  text-shadow: 4px 4px 12px #7a7a7a;
 }
 
 .right_div {
@@ -88,7 +87,8 @@
 }
 .images img {
   width: 100%;
-  height: 72px;
+  height: auto;
+  cursor: pointer;
 }
 
 .brand_images {
@@ -113,7 +113,7 @@
 /* Mobile devices */
 @media (max-width: 640px) {
   .section {
-    padding: 17px;
+    padding: 60px 17px;
     flex-direction: column;
   }
 
@@ -126,6 +126,7 @@
     font-weight: 400;
     width: 100%;
     padding: 0px;
+    text-transform: uppercase;
   }
   .images_div h2 {
     font-size: 16px;
@@ -140,19 +141,23 @@
   }
   .video {
     margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 16/9;
   }
   .images img {
-    width: 100%; /* Make images fill the grid */
-    height: auto; /* Keep aspect ratio */
-    object-fit: cover; /* Prevent distortion */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   .brand_images {
     width: 100%;
+    height: auto;
   }
   #brand_images_3_grid {
     width: 100%;
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -177,18 +182,21 @@
   }
   .video {
     margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 16/9;
   }
   .images {
     margin: 15px 0px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
   .images img {
     width: 100%;
-    height: 55px;
+    height: auto;
+    cursor: pointer;
   }
   .brand_images {
     width: 100%;
@@ -206,8 +214,10 @@
 
   .video {
     margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
-    height: 183px;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 
   .heading {
