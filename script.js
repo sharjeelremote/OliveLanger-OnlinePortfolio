@@ -81,11 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   videothumnail_div.addEventListener("click", function () {
     video_lightbox.style.display = "flex";
+    console.log("click");
   });
 
   closeBtn.addEventListener("click", function () {
     video_lightbox.style.display = "none";
-    console.log("hello");
   });
 });
 
