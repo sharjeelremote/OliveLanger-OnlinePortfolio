@@ -252,8 +252,8 @@ footer {
 }
 
 .lightbox-img {
-  width: 80vw;
-  height: 70vh;
+  width: 90vw;
+  height: 95vh;
   border-radius: 2px;
   object-fit: contain;
   image-rendering: auto;
@@ -263,8 +263,8 @@ footer {
   position: absolute;
   top: 20px;
   right: 50px;
-  font-size: 30px;
-  color: black;
+  font-size: 32px;
+  color: var(--gray);
   cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(123, 118, 118, 0);
   border: none;
   padding: 10px 15px;
   color: black;
@@ -281,10 +281,15 @@ footer {
   border-radius: 5px;
 }
 .prev-btn {
-  left: 20px;
+  font-size: 32px;
+  left: 10px;
+  color: var(--gray);
 }
 .next-btn {
+  font-size: 32px;
+
   right: 20px;
+  color: var(--gray);
 }
 
 .nav-btn:hover {
@@ -337,7 +342,7 @@ footer {
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: black;
+    color: var(--gray);
     cursor: pointer;
   }
   header div {
