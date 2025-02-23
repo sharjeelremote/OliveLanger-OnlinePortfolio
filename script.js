@@ -128,25 +128,22 @@ let urls = [
   "/360_strategy.html",
 ];
 
-let urlIndex = urls.findIndex((url) => url === window.location.pathname);
 function navigatBack() {
-  if (urlIndex === 0) {
-    urlIndex = urlIndex + 11;
-    window.location.href = urls[urlIndex];
-  } else if (urlIndex === 1) {
-    window.location.href = urls[11];
-  } else {
-    urlIndex--;
-    window.location.href = urls[urlIndex];
-  }
+  let urlIndex = urls.findIndex((url) => url === window.location.pathname);
+
+  if (urlIndex === -1) return;
+
+  urlIndex = (urlIndex - 1 + urls.length) % urls.length;
+
+  window.location.href = urls[urlIndex];
 }
 
 function navigateNext() {
-  if (urlIndex === 11) {
-    window.location.href = urls[1];
-  } else {
-    urlIndex = urls.findIndex((url) => url === window.location.pathname);
-    urlIndex++;
-    window.location.href = urls[urlIndex];
-  }
+  let urlIndex = urls.findIndex((url) => url === window.location.pathname);
+
+  if (urlIndex === -1) return;
+
+  urlIndex = (urlIndex + 1) % urls.length;
+
+  window.location.href = urls[urlIndex];
 }
