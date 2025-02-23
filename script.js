@@ -1,8 +1,8 @@
 // images lightBox
 
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".brand_images  img"); // Select images on this page only
-  const impresionImages = document.querySelectorAll(".images  img"); // Select images on this page only
+  const images = document.querySelectorAll(".brand_images  img");
+  const impresionImages = document.querySelectorAll(".images  img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const closeBtn = document.querySelector(".close-btn");
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("next-btn");
 
   let currentIndex = 0;
-  let imgList = []; // Store only this page's images
+  let imgList = [];
 
   // Collect image sources from the current page
   if (images.length > 0) {
@@ -114,36 +114,48 @@ function loadVideo(video_container) {
 // Url Navigation Buttons logic
 
 let urls = [
-  "/lufthansaSystems.html",
-  "/tedxzurich2015.html",
-  "/tedxzurich2016.html",
-  "/tedxzurich2017.html",
-  "/appway.html",
-  "/leonteq.html",
-  "/persnal_shop.html",
-  "/migrol.html",
-  "/novis_vita_juicer.html",
-  "/bank_of_cyprus_guidlines.html",
-  "/bank_of_cyprus_editorial.html",
-  "/360_strategy.html",
+  "/lufthansaSystems",
+  "/tedxzurich2015",
+  "/tedxzurich2016",
+  "/tedxzurich2017",
+  "/appway",
+  "/leonteq",
+  "/persnal_shop",
+  "/migrol",
+  "/novis_vita_juicer",
+  "/bank_of_cyprus_guidlines",
+  "/bank_of_cyprus_editorial",
+  "/360_strategy",
 ];
-
+function getCurrentPath() {
+  return window.location.pathname.replace(/\.html$/, "");
+}
+function navigateTo(url) {
+  let needsHtml = window.location.pathname.includes(".html");
+  window.location.href = needsHtml ? url + ".html" : url;
+}
 function navigatBack() {
-  let urlIndex = urls.findIndex((url) => url === window.location.pathname);
+  let currentPath = getCurrentPath();
+  let urlIndex = urls.findIndex((url) => url === currentPath);
 
-  if (urlIndex === -1) return;
+  if (urlIndex === -1) {
+    console.warn("URL not found in list:", currentPath);
+    return;
+  }
 
   urlIndex = (urlIndex - 1 + urls.length) % urls.length;
-
-  window.location.href = urls[urlIndex];
+  navigateTo(urls[urlIndex]);
 }
 
 function navigateNext() {
-  let urlIndex = urls.findIndex((url) => url === window.location.pathname);
+  let currentPath = getCurrentPath();
+  let urlIndex = urls.findIndex((url) => url === currentPath);
 
-  if (urlIndex === -1) return;
+  if (urlIndex === -1) {
+    console.warn("URL not found in list:", currentPath);
+    return;
+  }
 
   urlIndex = (urlIndex + 1) % urls.length;
-
-  window.location.href = urls[urlIndex];
+  navigateTo(urls[urlIndex]);
 }
