@@ -114,7 +114,7 @@ function loadVideo(video_container) {
 // Url Navigation Buttons logic
 
 let urls = [
-  "/lufthansaSystems",
+  "/lufthansa_systems",
   "/tedxzurich2015",
   "/tedxzurich2016",
   "/tedxzurich2017",
@@ -126,9 +126,9 @@ let urls = [
   "/bank_of_cyprus_guidlines",
   "/bank_of_cyprus_editorial",
   "/360_strategy",
-];
+].map((url) => url.toLowerCase());
 function getCurrentPath() {
-  return window.location.pathname.replace(/\.html$/, "");
+  return window.location.pathname.replace(/\.html$/, "").toLowerCase();
 }
 function navigateTo(url) {
   let needsHtml = window.location.pathname.includes(".html");
