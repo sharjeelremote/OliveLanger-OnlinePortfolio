@@ -127,7 +127,7 @@
   justify-content: space-between;
 }
 .text_detail {
-  width: 430px;
+  width: 40%;
 }
 .main_heading {
   font-size: 24px;
@@ -163,7 +163,7 @@
   font-size: 16px;
 }
 .images_div {
-  width: 517px;
+  width: 60%;
 }
 .images {
   display: grid;
