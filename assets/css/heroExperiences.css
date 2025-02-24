@@ -317,6 +317,8 @@
     object-fit: cover;
   }
   .videos {
+    margin-top: 18px;
+
     grid-template-columns: repeat(2, 1fr);
   }
   #video_grid_4 {
