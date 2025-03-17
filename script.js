@@ -81,14 +81,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.querySelector(".lightbox_video");
   videothumnail_div.forEach((thumbnail) => {
     thumbnail.addEventListener("click", function () {
+      iframe.src = thumbnail
+        .getElementsByTagName("img")[0]
+        .getAttribute("data-video");
       video_lightbox.style.display = "flex";
-      console.log("click");
     });
   });
   if (closeBtn) {
     closeBtn.addEventListener("click", function () {
       video_lightbox.style.display = "none";
-      iframe.src = iframe.src;
+      // iframe.src = iframe.src;
     });
   }
 });
@@ -120,10 +122,10 @@ let urls = [
   "/tedxzurich2017",
   "/appway",
   "/leonteq",
-  "/persnal_shop",
+  "/personal_shop",
   "/migrol",
   "/novis_vita_juicer",
-  "/bank_of_cyprus_guidlines",
+  "/bank_of_cyprus_guidelines",
   "/bank_of_cyprus_editorial",
   "/360_strategy",
 ].map((url) => url.toLowerCase());
