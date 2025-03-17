@@ -18,12 +18,14 @@
 
 header div {
   max-width: 1200px;
-  padding: 35px 98px;
+  padding: 32px 98px 28px 98px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
 }
-
+header div a {
+  line-height: 0em !important;
+}
 .logo {
   width: 200px;
   height: 27px;
