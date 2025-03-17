@@ -305,15 +305,16 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(65, 64, 64, 0.575);
+  background: rgba(255, 255, 255, 0.788);
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
 .lightbox_video {
-  width: 80vw;
+  width: auto;
   height: 80vh;
-  border-radius: 2px;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
 }
 
 /* Hero Experiences pages */
@@ -630,9 +631,10 @@ footer {
     padding: 0px;
   }
   .lightbox_video {
-    width: 95vw;
-    height: 50vh;
-    border-radius: 2px;
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 4px;
   }
   footer {
     background-color: #101014;
@@ -818,7 +820,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 18px;
   }
-
+  .lightbox_video {
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 4px;
+  }
   /* small experience pages */
 
   .section {

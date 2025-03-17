@@ -90,9 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
   if (closeBtn) {
     closeBtn.addEventListener("click", function () {
       video_lightbox.style.display = "none";
-      // iframe.src = iframe.src;
+      iframe.src = "";
     });
   }
+
+  video_lightbox.addEventListener("click", function (event) {
+    if (!iframe.contains(event.target)) {
+      video_lightbox.style.display = "none";
+      iframe.src = "";
+    }
+  });
 });
 
 // video thumbnails
