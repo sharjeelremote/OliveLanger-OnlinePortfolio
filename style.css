@@ -408,6 +408,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
+  margin: 15px 0px;
 }
 #brand_images_3_grid {
   padding: 20px 0px;
@@ -728,8 +729,7 @@ footer {
     gap: 18px;
   }
   .video {
-    margin-top: 20px;
-    margin-top: 20px;
+    margin: 15px 0px;
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
