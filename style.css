@@ -75,7 +75,7 @@ section {
   width: 50%;
 }
 .section_heading {
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   line-height: 1.3em;
   font-weight: 400;
   font-size: 28px;
@@ -147,7 +147,7 @@ section {
   text-decoration: none;
 }
 .section_detail_title_para h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px 0px;
   color: black;
@@ -161,7 +161,7 @@ section {
   color: black;
 }
 .section_detail_title_para p {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--gray);
   letter-spacing: 0.035em;
 }
@@ -177,7 +177,7 @@ section {
 }
 
 .blog_post_text h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 5px 0px;
   cursor: pointer;
@@ -197,11 +197,11 @@ section {
   color: black;
 }
 .blog_post_text p {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--gray);
   padding: 5px 0px;
   font-weight: 400;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.03em;
 }
 
 footer {
@@ -346,12 +346,11 @@ footer {
 .video {
   margin-top: 20px;
   width: 389px;
-  height: 233px;
+  height: auto;
   aspect-ratio: 16/9;
 }
 .video-container {
   position: relative;
-
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -568,7 +567,7 @@ footer {
   }
   header div {
     max-width: 1200px;
-    padding: 14px 20px;
+    padding: 14px 20px 10px 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -600,7 +599,7 @@ footer {
     width: 100%;
   }
   .section_heading {
-    letter-spacing: 0.16em;
+    letter-spacing: 0.08em;
     line-height: 1.25em;
     font-weight: 400;
     font-size: 28px;
@@ -614,14 +613,14 @@ footer {
     padding: 17px 0px;
   }
   .section_detail_title_para h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     padding: 10px 0px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
   }
   .section_detail_title_para p {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--gray);
   }
   .blog_post img {
@@ -756,7 +755,7 @@ footer {
 @media (min-width: 641px) and (max-width: 768px) {
   header div {
     max-width: 1200px;
-    padding: 14px 32px;
+    padding: 14px 20px 10px 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -874,7 +873,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
   header div {
     max-width: 1200px;
-    padding: 14px 32px;
+    padding: 14px 20px 10px 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
