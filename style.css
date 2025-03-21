@@ -87,7 +87,7 @@ section {
 .portfolio_para_div p {
   margin-bottom: 20px;
   color: var(--gray);
-  font-size: 15px;
+  font-size: 14px;
   background-color: white;
 }
 .icons_div {
@@ -257,15 +257,15 @@ footer {
 .lightbox img {
   max-width: none;
   max-height: none;
-  width: 90vw;
+  width: 85vw;
   height: auto;
   object-fit: scale-down;
 }
 
 .close-btn {
   position: absolute;
-  top: 20px;
-  right: 50px;
+  top: 10px;
+  right: 20px;
   font-size: 32px;
   color: var(--gray);
   cursor: pointer;
@@ -290,8 +290,7 @@ footer {
 }
 .next-btn {
   font-size: 32px;
-
-  right: 20px;
+  right: 10px;
   color: var(--gray);
 }
 
@@ -339,6 +338,7 @@ footer {
   font-weight: 400;
   letter-spacing: 0.16em;
   line-height: 1.25em;
+  text-transform: uppercase;
 }
 #about_Tdx {
   margin-top: 0px;
@@ -403,6 +403,7 @@ footer {
   object-fit: cover;
   overflow-clip-margin: unset;
   overflow: auto;
+  cursor: pointer;
 }
 
 .brand_images {
@@ -544,23 +545,21 @@ footer {
     padding-bottom: 60px;
   }
   .lightbox-img {
-    width: 80vw;
-    height: 40vh;
     border-radius: 10px;
   }
   .nav-btn {
     padding: 1px;
   }
   .prev-btn {
-    left: 1px;
+    left: 10px;
   }
   .next-btn {
-    right: 1px;
+    right: 10px;
   }
   .close-btn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 25px;
     font-size: 30px;
     color: var(--gray);
     cursor: pointer;
@@ -614,7 +613,7 @@ footer {
   }
   .section_detail_title_para h2 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 0px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
@@ -739,6 +738,7 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+    cursor: pointer;
   }
   .brand_images {
     width: 100%;
@@ -841,6 +841,7 @@ footer {
     font-size: 22px;
     font-weight: 400;
     width: 100%;
+    text-transform: uppercase;
   }
 
   .video {
@@ -938,5 +939,6 @@ footer {
     font-size: 22px;
     font-weight: 400;
     width: 80%;
+    text-transform: uppercase;
   }
 }
